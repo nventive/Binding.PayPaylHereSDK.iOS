@@ -279,7 +279,8 @@ namespace PPH
 		ProcessingPayment,
 		WaitingForSignature,
 		TransactionCancelled,
-		TransactionDeclined
+		TransactionDeclined,
+		RefundTypeSelectionCancelled
 	}
 
 	[Native]

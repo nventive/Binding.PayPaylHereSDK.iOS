@@ -9,7 +9,7 @@ using ObjCRuntime;
 
 
 namespace PPH
-{ 
+{
 
 	// @interface PPHReaderConstants : NSObject
 	[BaseType(typeof(NSObject))]
@@ -380,7 +380,7 @@ namespace PPH
 
 		// -(id)initWithRounding:(NSDecimalNumber *)amount inCurrency:(NSString *)currency;
 		//[Export("initWithRounding:inCurrency:")]
-	//	IntPtr Constructor(NSDecimalNumber amount, string currency);
+		//IntPtr Constructor(NSDecimalNumber amount, string currency);
 
 		// @property (readonly, nonatomic, strong) NSString * currencyCode;
 		[Export("currencyCode", ArgumentSemantic.Strong)]
@@ -749,7 +749,7 @@ namespace PPH
 	delegate void PPHInvoiceLoadDetailsCompletionHandler(NSDictionary arg0, PPHError arg1);
 
 	// typedef void (^PPHTransactionDetailsResultWrapper)(PPMobileAPITransactionDetailsResult *);
-	// void PPHTransactionDetailsResultWrapper(PPMobileAPITransactionDetailsResult arg0);
+	// delegate void PPHTransactionDetailsResultWrapper(PPMobileAPITransactionDetailsResult arg0);
 
 	// typedef void (^PPHInvoiceBasicCompletionHandler)(PPHError *);
 	delegate void PPHInvoiceBasicCompletionHandler(PPHError arg0);
@@ -2058,6 +2058,10 @@ namespace PPH
 		// @property (assign, nonatomic) BOOL usePercentageOnReaderTips;
 		[Export("usePercentageOnReaderTips")]
 		bool UsePercentageOnReaderTips { get; set; }
+
+		// @property (assign, nonatomic) NSTimeInterval readerSleepDelay;
+		//[Export("readerSleepDelay")]
+		//double ReaderSleepDelay { get; set; }
 
 		// -(void)beginPayment;
 		[Export("beginPayment")]
