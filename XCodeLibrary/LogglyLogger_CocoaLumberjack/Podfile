@@ -1,0 +1,4 @@
+platform :ios, '11.2'
+target 'LogglyLogger_CocoaLumberjack' do
+  pod 'CocoaLumberjack'
+end
