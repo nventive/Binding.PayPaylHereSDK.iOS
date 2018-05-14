@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{8FFB629D-F513-41CE-95D2-7ECE97B6EEEC};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{57ED2FFE-F55E-4261-9942-7AD35D0EDC01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PayPalHereSDK2._0</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>PayPalHereSDK2.0</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.iOS" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <NativeReference Include="Native References/libManticoreNative.a">
+      <Kind>Static</Kind>
+      <ForceLoad>True</ForceLoad>
+      <Frameworks>Foundation JavaScriptCore UIKit</Frameworks>
+      <LinkerFlags>-ObjC</LinkerFlags>
+    </NativeReference>
+    <NativeReference Include="Native References/PayPalRetailSDK.framework">
+      <Kind>Framework</Kind>
+      <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-ObjC</LinkerFlags>
+      <Frameworks>UIKit JavaScriptCore Foundation LogglyLogger_CocoaLumberjack</Frameworks>
+    </NativeReference>
+    <NativeReference Include="Native References\CocoaLumberjack.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <Frameworks>UIKit Foundation</Frameworks>
+      <LinkerFlags>-ObjC</LinkerFlags>
+    </NativeReference>
+    <NativeReference Include="Native References\LogglyLogger_CocoaLumberjack.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <Frameworks>CocoaLumberjack Foundation UIKit CoreGraphics</Frameworks>
+      <LinkerFlags>-ObjC</LinkerFlags>
+    </NativeReference>
+    <NativeReference Include="Native References\SimpleKeychain.framework">
+      <Kind>Framework</Kind>
+      <SmartLink>False</SmartLink>
+      <ForceLoad>True</ForceLoad>
+      <LinkerFlags>-ObjC</LinkerFlags>
+    </NativeReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\check_icon_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\check_icon_green%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\chip_emv_chippin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\chip_emv_chippin%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\chip_emv_chippin%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_checkmark_lg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_checkmark_lg%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipnswipe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipnswipe%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipnswipe%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipntap_waves.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipntap_waves%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipntap_waves%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_closeX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_closeX%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_closeX%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_critical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_critical%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt_pressed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt_pressed%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_email%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_info_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_info_orange%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_info_orange%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_refresh%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_refresh%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_text%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_x_declined.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_x_declined%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\Info.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ppCert" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\RemoveHeadphones_en.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\RetailCountryPhoneFormats.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_darkgrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_darkgrey%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_lightblue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_lightblue%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\success_card_read.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\triangle_swiper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\triangle_swiper%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\triangle_swiper%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-AU.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-AU.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-AU.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-GB.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-GB.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-GB.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\es.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\es.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\es.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\fr.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\fr.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\fr.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja-JP.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja-JP.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja-JP.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hans.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hans.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hans.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hant.lproj\Dynamic.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hant.lproj\InfoPlist.strings" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hant.lproj\PPRSDK.strings" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+</Project>
