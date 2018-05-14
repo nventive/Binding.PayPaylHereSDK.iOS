@@ -1,0 +1,14 @@
+PODS:
+  - ManticoreNative (1.0.0)
+
+DEPENDENCIES:
+  - ManticoreNative (from `../../`)
+
+EXTERNAL SOURCES:
+  ManticoreNative:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  ManticoreNative: 52236cbc64b97cb969487246c225fc453479de8f
+
+COCOAPODS: 0.39.0

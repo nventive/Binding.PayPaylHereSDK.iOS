@@ -1,0 +1,23 @@
+workspace 'Manticore'
+
+xcodeproj 'ManticoreContainer/ManticoreContainer'
+
+target 'ManticoreContainer-iOS' do
+  platform :ios, '7.0'
+  pod 'ManticoreNative', :path => '../../'
+end
+
+target 'ManticoreContainer-iOSTests' do
+  platform :ios, '7.0'
+  pod 'ManticoreNative', :path => '../../'
+end
+
+target 'ManticoreContainer-OSX' do
+  platform :osx, '10.9'
+  pod 'ManticoreNative', :path => '../../'
+end
+
+target 'ManticoreContainer-OSXTests' do
+  platform :osx, '10.9'
+  pod 'ManticoreNative', :path => '../../'
+end
