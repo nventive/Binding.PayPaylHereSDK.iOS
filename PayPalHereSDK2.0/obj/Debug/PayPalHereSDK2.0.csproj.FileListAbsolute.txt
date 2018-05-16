@@ -1,7 +1,0 @@
-C:/Users/simon.therrien/Source/Repos/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/obj/Debug/PayPalHereSDK2.0.csprojResolveAssemblyReference.cache
-C:/Users/simon.therrien/Source/Repos/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/obj/Debug/PayPalHereSDK2.0.csproj.CoreCompileInputs.cache
-/Users/user/Documents/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/bin/Debug/PayPalHereSDK2.0.dll
-/Users/user/Documents/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/bin/Debug/PayPalHereSDK2.0.pdb
-/Users/user/Documents/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/obj/Debug/PayPalHereSDK2.0.csproj.CoreCompileInputs.cache
-/Users/user/Documents/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/obj/Debug/PayPalHereSDK2.0.dll
-/Users/user/Documents/Binding.PayPalHereSDK.iOS2/PayPalHereSDK2.0/obj/Debug/PayPalHereSDK2.0.pdb
