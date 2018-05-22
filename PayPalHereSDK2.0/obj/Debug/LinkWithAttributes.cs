@@ -1,5 +1,0 @@
-[assembly: ObjCRuntime.LinkWith ("libManticoreNative.a", SmartLink = true, ForceLoad = true, Frameworks = "Foundation JavaScriptCore UIKit", LinkerFlags = "-ObjC")]
-[assembly: ObjCRuntime.LinkWith ("PayPalRetailSDK.framework", SmartLink = true, ForceLoad = true, Frameworks = "UIKit JavaScriptCore Foundation LogglyLogger_CocoaLumberjack", LinkerFlags = "-ObjC")]
-[assembly: ObjCRuntime.LinkWith ("CocoaLumberjack.framework", ForceLoad = true, Frameworks = "UIKit Foundation", LinkerFlags = "-ObjC")]
-[assembly: ObjCRuntime.LinkWith ("LogglyLogger_CocoaLumberjack.framework", ForceLoad = true, Frameworks = "CocoaLumberjack Foundation UIKit CoreGraphics", LinkerFlags = "-ObjC")]
-[assembly: ObjCRuntime.LinkWith ("SimpleKeychain.framework", ForceLoad = true, LinkerFlags = "-ObjC")]
