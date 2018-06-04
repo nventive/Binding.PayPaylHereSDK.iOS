@@ -11,6 +11,16 @@
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<Authors>nventive</Authors>
+		<PackageId>nventive.PayPalHereSDK</PackageId>
+		<Title>Xamarin Binding for PayPalHere SDK iOS</Title>
+		<PackageProjectUrl>https://github.com/nventive/Binding.PayPaylHereSDK.iOS</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/nventive/Binding.PayPaylHereSDK.iOS/blob/master/License.md</PackageLicenseUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageDescription>A Xamarin.Android binding library for the PayPalHere SDK iOS (https://github.com/paypal/paypal-here-sdk-ios-distribution)</PackageDescription>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<Reference Include="System" />
 		<Reference Include="Xamarin.iOS" />
