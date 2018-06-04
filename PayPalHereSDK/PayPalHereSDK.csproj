@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
 	<PropertyGroup>
-		<RootNamespace>PayPalHereSDK2._0</RootNamespace>
+		<RootNamespace>PayPalHereSDK</RootNamespace>
 		<IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-		<AssemblyName>PayPalHereSDK2.0</AssemblyName>
+		<AssemblyName>PayPalHereSDK</AssemblyName>
 		<TargetFramework>xamarinios10</TargetFramework>
 		<TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
 		<TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
