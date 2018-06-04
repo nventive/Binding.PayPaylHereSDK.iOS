@@ -1,0 +1,203 @@
+﻿<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0">
+	<PropertyGroup>
+		<RootNamespace>PayPalHereSDK</RootNamespace>
+		<IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+		<AssemblyName>PayPalHereSDK</AssemblyName>
+		<TargetFramework>xamarinios10</TargetFramework>
+		<TargetFrameworkIdentifier>Xamarin.iOS</TargetFrameworkIdentifier>
+		<TargetFrameworkVersion>v1.0</TargetFrameworkVersion>
+		<NuGetTargetMoniker>Xamarin.iOS,Version=v1.0</NuGetTargetMoniker>
+		<OutputPath>bin/$(Configuration)/$(Platform)</OutputPath>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Authors>nventive</Authors>
+		<PackageId>nventive.PayPalHereSDK</PackageId>
+		<Title>Xamarin Binding for PayPalHere SDK iOS</Title>
+		<PackageProjectUrl>https://github.com/nventive/Binding.PayPaylHereSDK.iOS</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/nventive/Binding.PayPaylHereSDK.iOS/blob/master/License.md</PackageLicenseUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageDescription>A Xamarin.Android binding library for the PayPalHere SDK iOS (https://github.com/paypal/paypal-here-sdk-ios-distribution)</PackageDescription>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="System" />
+		<Reference Include="Xamarin.iOS" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<NativeReference Include="Native References/libManticoreNative.a">
+			<Kind>Static</Kind>
+			<ForceLoad>True</ForceLoad>
+			<Frameworks>Foundation JavaScriptCore UIKit</Frameworks>
+			<LinkerFlags>-ObjC</LinkerFlags>
+		</NativeReference>
+		<NativeReference Include="Native References/PayPalRetailSDK.framework">
+			<Kind>Framework</Kind>
+			<ForceLoad>True</ForceLoad>
+			<LinkerFlags>-ObjC</LinkerFlags>
+			<Frameworks>UIKit JavaScriptCore Foundation LogglyLogger_CocoaLumberjack</Frameworks>
+		</NativeReference>
+		<NativeReference Include="Native References\CocoaLumberjack.framework">
+			<Kind>Framework</Kind>
+			<SmartLink>False</SmartLink>
+			<ForceLoad>True</ForceLoad>
+			<Frameworks>UIKit Foundation</Frameworks>
+			<LinkerFlags>-ObjC</LinkerFlags>
+		</NativeReference>
+		<NativeReference Include="Native References\LogglyLogger_CocoaLumberjack.framework">
+			<Kind>Framework</Kind>
+			<SmartLink>False</SmartLink>
+			<ForceLoad>True</ForceLoad>
+			<Frameworks>CocoaLumberjack Foundation UIKit CoreGraphics</Frameworks>
+			<LinkerFlags>-ObjC</LinkerFlags>
+		</NativeReference>
+		<NativeReference Include="Native References\SimpleKeychain.framework">
+			<Kind>Framework</Kind>
+			<SmartLink>False</SmartLink>
+			<ForceLoad>True</ForceLoad>
+			<LinkerFlags>-ObjC</LinkerFlags>
+		</NativeReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Remove="ApiDefinitions.cs" />
+		<Compile Remove="StructsAndEnums.cs" />
+
+		<ObjcBindingApiDefinition Include="ApiDefinitions.cs" />
+		<ObjcBindingCoreSource Include="StructsAndEnums.cs" />
+
+		<None Include="ApiDefinitions.cs" />
+		<None Include="StructsAndEnums.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\check_icon_green.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\check_icon_green%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\chip_emv_chippin.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\chip_emv_chippin%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\chip_emv_chippin%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_checkmark_lg.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_checkmark_lg%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipnswipe.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipnswipe%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipnswipe%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipntap_waves.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipntap_waves%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_chipntap_waves%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_closeX.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_closeX%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_closeX%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_critical.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_critical%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt_pressed.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_edit_receipt_pressed%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_email.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_email%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_info_orange.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_info_orange%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_info_orange%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_refresh.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_refresh%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_refresh%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_text.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_text%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_x_declined.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ic_x_declined%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\Info.plist" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ppCert" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\RemoveHeadphones_en.wav" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\RetailCountryPhoneFormats.plist" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_darkgrey.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_darkgrey%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_lightblue.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\sdk_clear_signature_lightblue%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\success_card_read.mp3" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\triangle_swiper.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\triangle_swiper%402x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\triangle_swiper%403x.png" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-AU.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-AU.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-AU.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-GB.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-GB.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en-GB.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\en.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\es.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\es.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\es.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\fr.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\fr.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\fr.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja-JP.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja-JP.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja-JP.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\ja.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hans.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hans.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hans.lproj\PPRSDK.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hant.lproj\Dynamic.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hant.lproj\InfoPlist.strings" />
+		<BundleResource Include="Resources\PayPalRetailSDKResources.bundle\zh-Hant.lproj\PPRSDK.strings" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="GitVersionTask" Version="4.0.0-beta0012">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+
+	<!-- Copied from C:\Program Files (x86)\Microsoft Visual Studio\Preview\Professional\MSBuild\15.0\Bin\Microsoft.Common.CurrentVersion.targets -->
+	<!-- Modified to prevent NuGet to attempt to look for the native manifest -->
+	<Target Name="BuiltProjectOutputGroup" Returns="@(BuiltProjectOutputGroupOutput)" DependsOnTargets="$(BuiltProjectOutputGroupDependsOn)">
+
+		<ItemGroup>
+			<_BuiltProjectOutputGroupOutputIntermediate Include="@(BuiltProjectOutputGroupKeyOutput)" />
+		</ItemGroup>
+
+		<!-- This item represents the app.config file -->
+		<ItemGroup>
+			<_BuiltProjectOutputGroupOutputIntermediate Include="$(AppConfig)" Condition="'$(AddAppConfigToBuildOutputs)'=='true'">
+				<FinalOutputPath>$(TargetDir)$(TargetFileName).config</FinalOutputPath>
+				<TargetPath>$(TargetFileName).config</TargetPath>
+				<!-- For compatibility with 2.0 -->
+				<OriginalItemSpec>$(AppConfig)</OriginalItemSpec>
+			</_BuiltProjectOutputGroupOutputIntermediate>
+		</ItemGroup>
+
+		<ItemGroup>
+			<_IsolatedComReference Include="@(COMReference)" Condition=" '%(COMReference.Isolated)' == 'true' " />
+			<_IsolatedComReference Include="@(COMFileReference)" Condition=" '%(COMFileReference.Isolated)' == 'true' " />
+		</ItemGroup>
+
+		<!-- This is the part that's causing issues, since the manifest is not generated but still looked for by NuGet pack -->
+		<!-- This item represents the native manifest, example: WindowsApplication1.exe.manifest or Native.ClassLibrary1.manifest -->
+		<!--<ItemGroup>
+			<_BuiltProjectOutputGroupOutputIntermediate Include="$(OutDir)$(_DeploymentTargetApplicationManifestFileName)" Condition="'@(NativeReference)'!='' or '@(_IsolatedComReference)'!=''">
+				<TargetPath>$(_DeploymentTargetApplicationManifestFileName)</TargetPath>
+				--><!-- For compatibility with 2.0 --><!--
+				<OriginalItemSpec>$(OutDir)$(_DeploymentTargetApplicationManifestFileName)</OriginalItemSpec>
+			</_BuiltProjectOutputGroupOutputIntermediate>
+		</ItemGroup>-->
+		
+		<!-- Convert intermediate items into final items; this way we can get the full path for each item -->
+		<ItemGroup>
+			<BuiltProjectOutputGroupOutput Include="@(_BuiltProjectOutputGroupOutputIntermediate->'%(FullPath)')">
+				<!-- For compatibility with 2.0 -->
+				<OriginalItemSpec Condition="'%(_BuiltProjectOutputGroupOutputIntermediate.OriginalItemSpec)' == ''">%(_BuiltProjectOutputGroupOutputIntermediate.FullPath)</OriginalItemSpec>
+			</BuiltProjectOutputGroupOutput>
+		</ItemGroup>
+
+	</Target>
+
+</Project>
