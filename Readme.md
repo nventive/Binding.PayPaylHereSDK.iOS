@@ -1,6 +1,6 @@
 ﻿# Xamarin Binding for PayPalHere SDK iOS
 
-A Xamarin.Android binding library for [PayPalHere SDK iOS](https://github.com/paypal/paypal-here-sdk-ios-distribution)
+A Xamarin.iOS binding library for [PayPalHere SDK iOS](https://github.com/paypal/paypal-here-sdk-ios-distribution)
 
 ## Status
 
@@ -56,7 +56,7 @@ From there you can set the receipt handler, card handler for callback and the co
 
 Everything payment related will be handle by paypal itself no need to do anything.
 
-Note : it is possible to initialize a manual entry card payment but creating a PPRetailManuallyEnteredCard and use the 
+Note : it is possible to initialize a manual entry card payment by creating a PPRetailManuallyEnteredCard and use the 
 
 ``` sharp
 transactionContext.ContinueWithCard(card);
