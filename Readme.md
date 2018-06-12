@@ -8,7 +8,7 @@ A Xamarin.Android binding library for [PayPalHere SDK iOS](https://github.com/pa
 |------|-------|
 | ![Build status](https://uno-platform.visualstudio.com/_apis/public/build/definitions/1dd81cbd-cb35-41de-a570-b0df3571a196/8/badge) | ![NuGet](https://buildstats.info/nuget/nventive.PayPalHereSDK?includePreReleases=false) |
 
-## How to use it
+## Getting Started
 
 First of, we higly recommend to read the documentation provided by [PayPal](https://developer.paypal.com/docs/integration/paypal-here/).
 
