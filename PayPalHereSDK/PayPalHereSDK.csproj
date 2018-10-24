@@ -18,7 +18,7 @@
 		<PackageProjectUrl>https://github.com/nventive/Binding.PayPaylHereSDK.iOS</PackageProjectUrl>
 		<PackageLicenseUrl>https://github.com/nventive/Binding.PayPaylHereSDK.iOS/blob/master/License.md</PackageLicenseUrl>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-		<PackageDescription>A Xamarin.Android binding library for the PayPalHere SDK iOS (https://github.com/paypal/paypal-here-sdk-ios-distribution)</PackageDescription>
+		<PackageDescription>A Xamarin.iOS binding library for the PayPalHere SDK iOS (https://github.com/paypal/paypal-here-sdk-ios-distribution)</PackageDescription>
 	</PropertyGroup>
 
 	<ItemGroup>
